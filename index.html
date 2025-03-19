@@ -179,7 +179,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Achievements</button>
           </li>
 <!--
           <li class="navbar-item">
@@ -224,137 +224,214 @@
 
 
         <!--
-          - service
+          - portfolio
         -->
 
-        <section class="service">
+        <section class="projects">
 
-          <h3 class="h3 service-title">Certifications</h3>
+          <h3 class="h3 service-title">Portfolio</h3>
 
-          <ul class="service-list">
+          <ul class="filter-list">
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <a href= "http://verify.skilljar.com/c/6n42agpunr88" >
-                  <img src="./assets/images/icon-tableau.png
-                " alt="design icon" width="50">
-                </a>
-              </div>
-              <a href= "http://verify.skilljar.com/c/6n42agpunr88" >
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Get Started with Tableau</h4>
-                </div>
-              </a>
-
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <a href= "https://drive.google.com/file/d/1ViFGgg2j1olWbemKwNY3fRqzwmmdMxvG/view?usp=drive_link" >
-                  <img src="./assets/images/icon-R.png" alt="Web development icon" width="50">
-                </a>
-              </div>
-              <a href= "https://drive.google.com/file/d/1ViFGgg2j1olWbemKwNY3fRqzwmmdMxvG/view?usp=drive_link" >
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Computational Statistics - Statistical Learning in R</h4>
-                </div>
-              </a>
-
+            <li class="filter-item">
+              <button data-filter-btn>Business Intelligence</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <a href= "https://drive.google.com/file/d/1ovie2AeVXvt3sGLT__rkaT2KmqWvF1eE/view?usp=drive_link" >
-                  <img src="./assets/images/icon-R.png" alt="Web development icon" width="50">
-                </a>
-              </div>
-              <a href= "https://drive.google.com/file/d/1ovie2AeVXvt3sGLT__rkaT2KmqWvF1eE/view?usp=drive_link" >
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Computational Statistics - Regression in R</h4>
-                </div>
-              </a>
-
+            <li class="filter-item">
+              <button data-filter-btn>Pipelines</button>
             </li>
 
-            <!--
-              - service
-            -->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <a href= "https://courses.learncodeonline.in/learn/certificate/1407484-35916" >
-                  <img src="./assets/images/icon-dart.png" alt="mobile app icon" width="50">
-                </a>
-              </div>
-              <a href= "https://courses.learncodeonline.in/learn/certificate/1407484-35916" >
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Dart Programming Certificate</h4>
-                </div>
-              </a>
-
+            <li class="filter-item">
+              <button data-filter-btn>AI</button>
             </li>
 
 
-            <li class="service-item">
+            <!-- <li class="filter-item">
+              <button data-filter-btn>SQL</button>
+            </li>
 
-              <div class="service-icon-box">
-                <a href= "https://www.credly.com/badges/cf7f61be-6648-443b-9362-7525d6823a5e" >
-                  <img src="./assets/images/IBM.png" alt="camera icon" width="50">
-                </a>
+            <li class="filter-item">
+              <button data-filter-btn>Excel</button>
+            </li>
+
+             -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
               </div>
-              <a href= "https://www.credly.com/badges/cf7f61be-6648-443b-9362-7525d6823a5e" >
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">IBM Blockchain Foundation for Developers</h4>
-                </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Business Intelligence</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Pipelines</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="business intelligence">
+              <a href="https://github.com/SidEnigma/AdventureWorksDashboard">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/dashboard_screenshot.png" alt="Interactive PowerBI dashboard to track crucial KPIs" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Interactive PowerBI dashboard to track crucial KPIs</h3>
+
+                <p class="project-category">Power BI, DAX</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="pipelines">
+              <a href="https://www.linkedin.com/pulse/data-engineering-pipeline-azure-factory-covid-19-project-sahoo-er4he/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/azure_dashboard.png" alt="Data Engineering Pipeline in Azure Data Factory: COVID-19 Project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Data Engineering Pipeline in Azure Data Factory: COVID-19 Project</h3>
+
+                <p class="project-category">Azure, Power BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="pipelines">
+              <a href="https://github.com/SidEnigma/ForexDataPipeline">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/airflow.png" alt="Coding Production Grade Data pipelines using Airflow" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Coding Production Grade Data pipelines using Airflow</h3>
+
+                <p class="project-category">Airflow, Kubernetes, Docker, Spark, S3, Grafana</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai">
+              <a href="https://github.com/SidEnigma/Chat-with-websites">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Chat-with-websites.png" alt="RAG Chain to chat with any website" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RAG Chain to chat with any website</h3>
+
+                <p class="project-category">Langchain, Streamlit</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai">
+              <a href="https://github.com/SidEnigma/Healthcare-PubMed-Bot">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Healthcare-PubMed-Bot.png" alt="PubMed Search Engine with LLM Augmented Q&A" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PubMed Search Engine with LLM Augmented Q&A</h3>
+
+                <p class="project-category">Haystack, Gradio</p>
+
               </a>
 
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="business intelligence">
+              <a href="https://github.com/SidEnigma/AppleSalesAnalysis">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ETL.png" alt="Apple Sales Analysis using Databricks to create ETL Pipelines with PySpark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Apple Sales Analysis using Databricks to create ETL Pipelines with PySpark</h3>
+
+                <p class="project-category">Databricks, Spark, SQL</p>
+
+              </a>
+            </li>
+
+
+
+            <li class="project-item  active" data-filter-item data-category="business intelligence">
+              <a href="https://public.tableau.com/app/profile/siddhant.sahoo7639/viz/SalesDashboard_17417975164140/Dashboard1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/TableauDemandPlanning.png" alt="Demand Planning Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Demand Planning Dashboard</h3>
+
+                <p class="project-category">Tableau</p>
+
+              </a>
             </li>
 
           </ul>
-          <br>
-
-          <h3 class="h3 service-title">Achievements</h3>
-            <ul class="service-list">
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <a href= "https://www.linkedin.com/feed/update/urn:li:activity:7045409021062733826/" >
-                    <img src="./assets/images/hackathon_starthack.jpg
-                  " alt="design icon" width="130">
-                  </a>
-                </div>
-                <a href= "https://www.linkedin.com/feed/update/urn:li:activity:7045409021062733826/" >
-                  <div class="service-content-box">
-                    <h4 class="h4 service-item-title"> Start Hack 2023! 🚀</h4>
-                  </div>
-                </a>
-
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <a href= "https://drive.google.com/file/d/1R65A7pGpoJ2cg-RCfvJwvcztVZcORn5K/view?usp=drive_link" >
-                    <img src="./assets/images/hd.png
-                  " alt="honors degree event" width="130">
-                  </a>
-                </div>
-                <a href= "https://drive.google.com/file/d/1R65A7pGpoJ2cg-RCfvJwvcztVZcORn5K/view?usp=drive_link" >
-                  <div class="service-content-box">
-                    <h4 class="h4 service-item-title"> Honours Degree in Entrepreneurship </h4>
-                  </div>
-                </a>
-
-              </li>
-
-            </ul>
-          
 
         </section>
 
-
-        
 
         <!--
           - testimonials modal
@@ -593,215 +670,137 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #ACHIEVEMENTS
       -->
       
-      <article class="portfolio" data-page="portfolio">
+      <article class="achievements" data-page="achievements">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Achievements</h2>
         </header>
 
-        <section class="projects">
+        <section class="service">
 
-          <ul class="filter-list">
+          <h3 class="h3 service-title">Certifications</h3>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <a href= "http://verify.skilljar.com/c/6n42agpunr88" >
+                  <img src="./assets/images/icon-tableau.png
+                " alt="design icon" width="50">
+                </a>
+              </div>
+              <a href= "http://verify.skilljar.com/c/6n42agpunr88" >
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Get Started with Tableau</h4>
+                </div>
+              </a>
+
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Business Intelligence</button>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <a href= "https://drive.google.com/file/d/1ViFGgg2j1olWbemKwNY3fRqzwmmdMxvG/view?usp=drive_link" >
+                  <img src="./assets/images/icon-R.png" alt="Web development icon" width="50">
+                </a>
+              </div>
+              <a href= "https://drive.google.com/file/d/1ViFGgg2j1olWbemKwNY3fRqzwmmdMxvG/view?usp=drive_link" >
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Computational Statistics - Statistical Learning in R</h4>
+                </div>
+              </a>
+
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Pipelines</button>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <a href= "https://drive.google.com/file/d/1ovie2AeVXvt3sGLT__rkaT2KmqWvF1eE/view?usp=drive_link" >
+                  <img src="./assets/images/icon-R.png" alt="Web development icon" width="50">
+                </a>
+              </div>
+              <a href= "https://drive.google.com/file/d/1ovie2AeVXvt3sGLT__rkaT2KmqWvF1eE/view?usp=drive_link" >
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Computational Statistics - Regression in R</h4>
+                </div>
+              </a>
+
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>AI</button>
+            <!--
+              - service
+            -->
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <a href= "https://courses.learncodeonline.in/learn/certificate/1407484-35916" >
+                  <img src="./assets/images/icon-dart.png" alt="mobile app icon" width="50">
+                </a>
+              </div>
+              <a href= "https://courses.learncodeonline.in/learn/certificate/1407484-35916" >
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Dart Programming Certificate</h4>
+                </div>
+              </a>
+
             </li>
 
 
-            <!-- <li class="filter-item">
-              <button data-filter-btn>SQL</button>
-            </li>
+            <li class="service-item">
 
-            <li class="filter-item">
-              <button data-filter-btn>Excel</button>
-            </li>
+              <div class="service-icon-box">
+                <a href= "https://www.credly.com/badges/cf7f61be-6648-443b-9362-7525d6823a5e" >
+                  <img src="./assets/images/IBM.png" alt="camera icon" width="50">
+                </a>
+              </div>
+              <a href= "https://www.credly.com/badges/cf7f61be-6648-443b-9362-7525d6823a5e" >
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">IBM Blockchain Foundation for Developers</h4>
+                </div>
+              </a>
 
-             -->
+            </li>
 
           </ul>
+          <br>
 
-          <div class="filter-select-box">
+          <h3 class="h3 service-title">Awards</h3>
+            <ul class="service-list">
 
-            <button class="filter-select" data-select>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <a href= "https://www.linkedin.com/feed/update/urn:li:activity:7045409021062733826/" >
+                    <img src="./assets/images/hackathon_starthack.jpg
+                  " alt="design icon" width="130">
+                  </a>
+                </div>
+                <a href= "https://www.linkedin.com/feed/update/urn:li:activity:7045409021062733826/" >
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title"> Start Hack 2023! 🚀</h4>
+                  </div>
+                </a>
 
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
               </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <a href= "https://drive.google.com/file/d/1R65A7pGpoJ2cg-RCfvJwvcztVZcORn5K/view?usp=drive_link" >
+                    <img src="./assets/images/hd.png
+                  " alt="honors degree event" width="130">
+                  </a>
+                </div>
+                <a href= "https://drive.google.com/file/d/1R65A7pGpoJ2cg-RCfvJwvcztVZcORn5K/view?usp=drive_link" >
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title"> Honours Degree in Entrepreneurship </h4>
+                  </div>
+                </a>
 
-              <li class="select-item">
-                <button data-select-item>Business Intelligence</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Pipelines</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>AI</button>
-              </li>
-
 
             </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="business intelligence">
-              <a href="https://github.com/SidEnigma/AdventureWorksDashboard">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dashboard_screenshot.png" alt="Interactive PowerBI dashboard to track crucial KPIs" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Interactive PowerBI dashboard to track crucial KPIs</h3>
-
-                <p class="project-category">Power BI, DAX</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="pipelines">
-              <a href="https://www.linkedin.com/pulse/data-engineering-pipeline-azure-factory-covid-19-project-sahoo-er4he/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/azure_dashboard.png" alt="Data Engineering Pipeline in Azure Data Factory: COVID-19 Project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Data Engineering Pipeline in Azure Data Factory: COVID-19 Project</h3>
-
-                <p class="project-category">Azure, Power BI</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="pipelines">
-              <a href="https://github.com/SidEnigma/ForexDataPipeline">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/airflow.png" alt="Coding Production Grade Data pipelines using Airflow" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Coding Production Grade Data pipelines using Airflow</h3>
-
-                <p class="project-category">Airflow, Kubernetes, Docker, Spark, S3, Grafana</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai">
-              <a href="https://github.com/SidEnigma/Chat-with-websites">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Chat-with-websites.png" alt="RAG Chain to chat with any website" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">RAG Chain to chat with any website</h3>
-
-                <p class="project-category">Langchain, Streamlit</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai">
-              <a href="https://github.com/SidEnigma/Healthcare-PubMed-Bot">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Healthcare-PubMed-Bot.png" alt="PubMed Search Engine with LLM Augmented Q&A" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PubMed Search Engine with LLM Augmented Q&A</h3>
-
-                <p class="project-category">Haystack, Gradio</p>
-
-              </a>
-
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="business intelligence">
-              <a href="https://github.com/SidEnigma/AppleSalesAnalysis">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ETL.png" alt="Apple Sales Analysis using Databricks to create ETL Pipelines with PySpark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Apple Sales Analysis using Databricks to create ETL Pipelines with PySpark</h3>
-
-                <p class="project-category">Databricks, Spark, SQL</p>
-
-              </a>
-            </li>
-
-
-
-            <li class="project-item  active" data-filter-item data-category="business intelligence">
-              <a href="https://public.tableau.com/app/profile/siddhant.sahoo7639/viz/SalesDashboard_17417975164140/Dashboard1">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/TableauDemandPlanning.png" alt="Demand Planning Dashboard" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Demand Planning Dashboard</h3>
-
-                <p class="project-category">Tableau</p>
-
-              </a>
-            </li>
-
-          </ul>
 
         </section>
 
